@@ -542,8 +542,21 @@
     <ClInclude Include="Engine\Source\Runtime\Core\Container\EnumAsByte.h" />
     <ClInclude Include="Engine\Source\Runtime\Core\Math\IsPODType.h" />
     <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\Asset.h" />
-    <ClInclude Include="Engine\Source\Runtime\Engine\Paritcles\ParticleEmitterInstances.h" />
     <ClInclude Include="Engine\Source\Runtime\Renderer\RenderPass\ParticleRenderPass.h" />
+    <ClInclude Include="Engine\Source\Runtime\CoreUObject\DummyObject.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\AssetFactory.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\AssetImporter.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\AssetRegistry.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\Particle\ParticleSystemFactory.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\Texture\TextureFactory.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Particles\Modules\UParticleModuleSphere.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Particles\TypeData\ParticleModuleTypeDataBase.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Particles\TypeData\ParticleModuleTypeDataMesh.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Particles\ParticleEmitterInstances.h" />
+    <ClInclude Include="Engine\Source\Runtime\Engine\Particles\ParticleHelper.h" />
+    <ClInclude Include="Engine\Source\Runtime\Serialization\Archive2.h" />
+    <ClInclude Include="Engine\Source\Runtime\Serialization\MemoryArchive.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Source\ThirdParty\DirectXTK\Include\DDSTextureLoader.h" />
@@ -626,7 +639,7 @@
     <FxCompile Include="Shaders\ParticleSystemVertexShader.hlsl" />
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="Week11_1.natvis" />
+    <Natvis Include="Week12_T3.natvis" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Engine\Engine.cpp" />
@@ -813,11 +826,28 @@
     <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Particles\Modules\ParticleModuleSubUV.cpp" />
     <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\Asset.cpp" />
     <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Particles\ParticleSystem.cpp" />
-    <ClCompile Include="Engine\Source\Runtime\Engine\Paritcles\ParticleEmitterInstances.cpp" />
     <ClCompile Include="Engine\Source\Runtime\Renderer\RenderPass\ParticleRenderPass.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\CoreUObject\DummyObject.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Core\Serialization\Serializer.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\AssetFactory.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\AssetImporter.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\AssetRegistry.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\Particle\ParticleSystemFactory.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Engine\Asset\Texture\TextureFactory.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Engine\Texture.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Classes\Particles\TypeData\ParticleModuleTypeData.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Engine\Particles\ParticleEmitterInstances.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Serialization\Archive2.cpp" />
+    <ClCompile Include="Engine\Source\Runtime\Serialization\MemoryArchive.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\ShaderHeaders\GConstantBuffers.hlsli" />
     <None Include="Shaders\ShaderHeaders\GSamplers.hlsli" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Week12_T3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon\icon.ico" />
   </ItemGroup>
 </Project>

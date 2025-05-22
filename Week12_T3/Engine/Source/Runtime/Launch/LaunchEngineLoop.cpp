@@ -1,5 +1,6 @@
 #include "LaunchEngineLoop.h"
 
+#include <resource.h>
 #include "ImGuiManager.h"
 #include "WindowsCursor.h"
 #include "Actors/ADodge.h"
@@ -230,6 +231,7 @@ HWND FEngineLoop::CreateEngineWindow(const HINSTANCE hInstance, WCHAR WindowClas
     wc.lpfnWndProc = AppWndProc;
     wc.hInstance = hInstance;
     wc.lpszClassName = WindowClass;
+    wc.hIcon = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_ICON1));
     wc.style = CS_HREDRAW | CS_VREDRAW | CS_DBLCLKS;
 
     RegisterClassW(&wc);

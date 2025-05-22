@@ -22,9 +22,9 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{59a9c47a-6a98-4bc3-b529-aec7bcb32238}</ProjectGuid>
-    <RootNamespace>Week11_1</RootNamespace>
+    <RootNamespace>Week12_T3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Week11_1</ProjectName>
+    <ProjectName>Week12_T3</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -174,7 +174,7 @@ xcopy /y /d "$(ProjectDir)Engine\Source\ThirdParty\FBX_SDK\2020.3.7\lib\x64\$(Co
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)Engine\Source\ThirdParty\FBX_SDK\2020.3.7\lib\x64\release;$(SolutionDir)Week11_1\Engine\Source\ThirdParty\DirectXTK\Lib\x64\Release;%(AdditionalLibraryDirectories);$(VcpkgRoot)\installed\x64-windows\lib;$(LibraryPath);$(ProjectDir)Engine\Source\ThirdParty\Lua\$(Configuration)\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)Engine\Source\ThirdParty\FBX_SDK\2020.3.7\lib\x64\release;$(SolutionDir)Week12_T3\Engine\Source\ThirdParty\DirectXTK\Lib\x64\Release;%(AdditionalLibraryDirectories);$(VcpkgRoot)\installed\x64-windows\lib;$(LibraryPath);$(ProjectDir)Engine\Source\ThirdParty\Lua\$(Configuration)\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>DirectXTK.lib;libfbxsdk.lib;lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <FxCompile>
@@ -774,6 +774,7 @@ xcopy /y /d "$(ProjectDir)Engine\Source\ThirdParty\FBX_SDK\2020.3.7\lib\x64\$(Co
     <ClInclude Include="Engine\Source\Runtime\Engine\Camera\CameraShake\RollCameraShake.h" />
     <ClInclude Include="Engine\Source\Runtime\Engine\Camera\CameraShake\HitCameraShake.h" />
     <ClInclude Include="Engine\Source\Runtime\Engine\Classes\Animation\CustomAnimInstance\TestAnimInstance.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Shaders\DebugDepthPixelShader.hlsl">
@@ -856,7 +857,7 @@ xcopy /y /d "$(ProjectDir)Engine\Source\ThirdParty\FBX_SDK\2020.3.7\lib\x64\$(Co
     </FxCompile>
     <FxCompile Include="Shaders\ParticleSystemPixelShader.hlsl">
       <ObjectFileOutput>C:\Users\Jungle\Downloads\week11\workspace\Binaries\x64\Debug\%(Filename).cso</ObjectFileOutput>
-      <TrackerLogDirectory>C:\Users\Jungle\Downloads\week11\workspace\Intermediate\Build\x64\Debug\Week11_1.tlog\</TrackerLogDirectory>
+      <TrackerLogDirectory>C:\Users\Jungle\Downloads\week11\workspace\Intermediate\Build\x64\Debug\Week12_T3.tlog\</TrackerLogDirectory>
       <EntryPointName>main</EntryPointName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ShaderModel>4.0_level_9_3</ShaderModel>
@@ -868,7 +869,7 @@ xcopy /y /d "$(ProjectDir)Engine\Source\ThirdParty\FBX_SDK\2020.3.7\lib\x64\$(Co
     </FxCompile>
     <FxCompile Include="Shaders\ParticleSystemVertexShader.hlsl">
       <ObjectFileOutput>C:\Users\Jungle\Downloads\week11\workspace\Binaries\x64\Debug\%(Filename).cso</ObjectFileOutput>
-      <TrackerLogDirectory>C:\Users\Jungle\Downloads\week11\workspace\Intermediate\Build\x64\Debug\Week11_1.tlog\</TrackerLogDirectory>
+      <TrackerLogDirectory>C:\Users\Jungle\Downloads\week11\workspace\Intermediate\Build\x64\Debug\Week12_T3.tlog\</TrackerLogDirectory>
       <EntryPointName>main</EntryPointName>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ShaderModel>4.0_level_9_3</ShaderModel>
@@ -943,7 +944,7 @@ xcopy /y /d "$(ProjectDir)Engine\Source\ThirdParty\FBX_SDK\2020.3.7\lib\x64\$(Co
     <Content Include="Shaders\FadePixelShader.hlsl" />
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="Week11_1.natvis" />
+    <Natvis Include="Week12_T3.natvis" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\ShaderHeaders\GConstantBuffers.hlsli">
@@ -954,6 +955,12 @@ xcopy /y /d "$(ProjectDir)Engine\Source\ThirdParty\FBX_SDK\2020.3.7\lib\x64\$(Co
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Week12_T3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Icon\icon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
