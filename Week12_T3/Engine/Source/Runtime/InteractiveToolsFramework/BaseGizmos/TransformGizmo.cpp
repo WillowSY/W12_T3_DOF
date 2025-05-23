@@ -6,7 +6,7 @@
 #include "Engine/FLoaderOBJ.h"
 #include "LevelEditor/SLevelEditor.h"
 #include "UnrealEd/EditorPlayer.h"
-
+#include <PxPhysicsAPI.h>
 UTransformGizmo::UTransformGizmo()
 {
     FManagerOBJ::CreateStaticMesh("Assets/gizmo_loc_x.obj");
