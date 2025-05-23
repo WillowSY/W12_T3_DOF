@@ -81,7 +81,7 @@ UTransformGizmo::UTransformGizmo()
 void UTransformGizmo::Tick(const float DeltaTime)
 {
     if (GetWorld()->WorldType != EWorldType::Editor
-     || GetWorld()->WorldType != EWorldType::EditorPreview)
+        && GetWorld()->WorldType != EWorldType::EditorPreview)
     {
         return;
     }
@@ -91,7 +91,7 @@ void UTransformGizmo::Tick(const float DeltaTime)
     TSet<AActor*> SelectedActors = GetWorld()->GetSelectedActors();
 
     // @todo 단일 선택에 대한 케이스 분리
-    if (!SelectedActors.IsEmpty())
+    if (!SelectedActors.IsEmpty()) 
     {
         const AActor* PickedActor = *SelectedActors.begin();
         if (PickedActor == nullptr)
