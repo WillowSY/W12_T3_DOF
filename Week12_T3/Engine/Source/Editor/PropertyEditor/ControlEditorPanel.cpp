@@ -756,7 +756,7 @@ void ControlEditorPanel::CreateSRTButton(const ImVec2 ButtonSize) const
     
     SLevelEditor* LevelEditor = EditorEngine->GetLevelEditor();
 
-    constexpr auto ActiveColor = ImVec4(0.00f, 0.00f, 0.85f, 1.0f);
+    constexpr auto ActiveColor = ImVec4(0.8f, 0.0f, 0.16f, 1.0f);
 
     const EControlMode ControlMode = LevelEditor->GetActiveViewportClientData().GetControlMode();
 
